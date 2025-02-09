@@ -1,0 +1,141 @@
+/* HOME PAGE */
+body{
+    background-color: #1a2238;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    align-items: center;
+
+}
+
+.deskripsi{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 100px;
+    margin-left: 20px;
+    color: white;
+}
+
+.animasi-text span{
+   position: relative;
+}
+
+.animasi-text span::before{
+    content: "Mahasiswa";
+    color: #ff6a3d;
+    animation: words 20s infinite;
+
+}
+
+.animasi-text span::after{
+    content: "";
+    background-color: #1a2238;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid #ff6a3d;
+    right: -8px;
+    animation: cursor .8s infinite,typing 20s steps(14) infinite ;
+
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #1a2238;
+    }
+    
+}
+
+@keyframes words{
+    0%,20% {
+        content: "Mahasiswa";
+    }
+    21%,40% {
+        content: "Mahasiswa";
+    }
+    41%,60% {
+        content: "Mahasiswa";
+    }
+    61%,80%{
+        content: "Mahasiswa";
+    }
+    81%,100% {
+        content: "Mahasiswa";
+    }
+
+    
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+
+}
+
+
+
+.ale2{
+    float: right;
+    margin-left: 20px;
+    margin-right: 200px;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* END HOME PAGE */
+
+
+
+/* ABOUT AREA */
+
+.aboutsaya{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 100px;
+    margin-left: 20px;
+    color: white;
+
+}
+
+
+
+.kelas1{
+    float: right;
+    margin-left: 20px;
+    margin-right: 200px;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    height: 100vh;
+    
+    
+}
+
+
+.tugas{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+   
